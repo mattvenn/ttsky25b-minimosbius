@@ -128,7 +128,7 @@ X2 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=840000u l=
 .ends
 
 .subckt mosbius_col7 X tt_asw_3v3_4/mod tt_asw_3v3_5/bus tt_asw_3v3_1/mod tt_asw_3v3_2/bus
-+ tt_asw_3v3_5/mod tt_asw_3v3_2/mod tt_asw_3v3_7/VAPWR tt_asw_3v3_3/bus tt_asw_3v3_0/bus
++ tt_asw_3v3_5/mod tt_asw_3v3_7/VAPWR tt_asw_3v3_2/mod tt_asw_3v3_3/bus tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_1_0/A tt_asw_3v3_7/bus tt_asw_3v3_3/mod sky130_fd_sc_hd__dfrtp_1_6/D
 + tt_asw_3v3_4/bus tt_asw_3v3_0/mod sky130_fd_sc_hd__and2_1_6/A sky130_fd_sc_hd__and2_1_6/B
 + tt_asw_3v3_7/ctrl tt_asw_3v3_1/bus sky130_fd_sc_hd__dfrtp_1_6/RESET_B tt_asw_3v3_7/mod
@@ -559,7 +559,7 @@ X111 a_1261_1354# a_1061_1257# a_1003_1354# w_n3841_n2651# sky130_fd_pr__pfet_g5
 .ends
 
 .subckt mosbius_col6 X tt_asw_3v3_4/mod tt_asw_3v3_5/bus tt_asw_3v3_1/mod tt_asw_3v3_2/bus
-+ tt_asw_3v3_5/VAPWR tt_asw_3v3_5/mod tt_asw_3v3_2/mod tt_asw_3v3_3/bus tt_asw_3v3_0/bus
++ tt_asw_3v3_5/mod tt_asw_3v3_5/VAPWR tt_asw_3v3_2/mod tt_asw_3v3_3/bus tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_1_0/A sky130_fd_sc_hd__dfrtp_1_5/RESET_B tt_asw_3v3_3/mod
 + sky130_fd_sc_hd__and2_1_1/A tt_asw_3v3_4/bus tt_asw_3v3_0/mod tt_asw_3v3_1/bus sky130_fd_sc_hd__and2_1_5/B
 + tt_asw_3v3_5/VDPWR sky130_fd_sc_hd__dfrtp_1_5/D VSUBS
@@ -781,14 +781,14 @@ X51 a_445_118# a_345_21# a_287_118# w_n2283_n1415# sky130_fd_pr__pfet_g5v0d10v5 
 + VGND VAPWR VDPWR
 Xmosbius_col7_16 mosbius_col7_16/X mosbius_col7_16/tt_asw_3v3_7/mod mosbius_col8_4/tt_asw_3v3_5/bus
 + mosbius_col7_16/tt_asw_3v3_7/mod mosbius_col8_4/tt_asw_3v3_2/bus mosbius_col7_16/tt_asw_3v3_7/mod
-+ mosbius_col7_16/tt_asw_3v3_7/mod VAPWR mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_16/tt_asw_3v3_7/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y VAPWR mosbius_col7_16/tt_asw_3v3_7/mod mosbius_col8_27/sky130_fd_sc_hd__and2_1_4/A
 + mosbius_col8_4/tt_asw_3v3_6/bus mosbius_col7_16/tt_asw_3v3_7/mod mosbius_col7_16/sky130_fd_sc_hd__and2_1_6/A
 + ui_in[1] mosbius_col7_16/tt_asw_3v3_7/ctrl mosbius_col8_4/tt_asw_3v3_1/bus ui_in[2]
 + mosbius_col7_16/tt_asw_3v3_7/mod VGND VDPWR mosbius_col7
 Xmosbius_col7_15 mosbius_col7_15/X mosbius_col7_15/tt_asw_3v3_5/mod mosbius_col8_30/tt_asw_3v3_5/bus
 + mosbius_col7_15/tt_asw_3v3_5/mod mosbius_col6_3/tt_asw_3v3_5/bus mosbius_col7_15/tt_asw_3v3_5/mod
-+ mosbius_col7_15/tt_asw_3v3_5/mod VAPWR mosbius_col6_3/tt_asw_3v3_0/bus mosbius_col8_30/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_15/tt_asw_3v3_5/mod mosbius_col6_3/tt_asw_3v3_0/bus mosbius_col8_30/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y mosbius_col8_27/tt_asw_3v3_6/mod mosbius_col7_15/tt_asw_3v3_5/mod
 + mosbius_col6_3/sky130_fd_sc_hd__and2_1_1/A mosbius_col8_30/tt_asw_3v3_6/bus mosbius_col7_15/tt_asw_3v3_5/mod
 + mosbius_col7_15/sky130_fd_sc_hd__and2_1_6/A ui_in[1] mosbius_col7_15/tt_asw_3v3_7/ctrl
@@ -939,7 +939,7 @@ Xmosbius_col8_14 mosbius_col8_14/X VGND mosbius_col8_4/tt_asw_3v3_5/bus VGND mos
 + mosbius_col8_4/tt_asw_3v3_1/bus VDPWR VGND mosbius_col8
 Xmosbius_col7_9 mosbius_col7_9/X mosbius_col7_9/tt_asw_3v3_7/mod mosbius_col8_4/tt_asw_3v3_5/bus
 + mosbius_col7_9/tt_asw_3v3_7/mod mosbius_col8_4/tt_asw_3v3_2/bus mosbius_col7_9/tt_asw_3v3_7/mod
-+ mosbius_col7_9/tt_asw_3v3_7/mod VAPWR mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_9/tt_asw_3v3_7/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y VGND mosbius_col7_9/tt_asw_3v3_7/mod mosbius_col8_4/sky130_fd_sc_hd__and2_1_4/A
 + mosbius_col8_4/tt_asw_3v3_6/bus mosbius_col7_9/tt_asw_3v3_7/mod mosbius_col7_9/sky130_fd_sc_hd__and2_1_6/A
 + ui_in[1] mosbius_col7_9/tt_asw_3v3_7/ctrl mosbius_col8_4/tt_asw_3v3_1/bus ui_in[2]
@@ -1050,14 +1050,14 @@ Xmosbius_col8_4 mosbius_col8_4/X mosbius_col8_4/tt_asw_3v3_5/mod mosbius_col8_4/
 + mosbius_col8_4/tt_asw_3v3_6/bus mosbius_col8_4/tt_asw_3v3_5/mod ui_in[1] mosbius_col8_4/tt_asw_3v3_1/bus
 + ui_in[2] mosbius_col8_4/tt_asw_3v3_7/mod VDPWR VGND mosbius_col8
 Xmosbius_col6_2 mosbius_col6_2/X mosbius_col6_2/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_5/bus
-+ mosbius_col6_2/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_2/bus VAPWR mosbius_col6_2/tt_asw_3v3_5/mod
-+ mosbius_col6_2/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
++ mosbius_col6_2/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_2/bus mosbius_col6_2/tt_asw_3v3_5/mod
++ VAPWR mosbius_col6_2/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y ui_in[2] mosbius_col6_2/tt_asw_3v3_5/mod mosbius_col6_2/sky130_fd_sc_hd__and2_1_1/A
 + mosbius_col8_4/tt_asw_3v3_6/bus mosbius_col6_2/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_1/bus
 + ui_in[1] VDPWR mosbius_col8_20/sky130_fd_sc_hd__and2_1_4/A VGND mosbius_col6
 Xmosbius_col6_3 mosbius_col6_3/X mosbius_col6_3/tt_asw_3v3_5/mod mosbius_col6_3/tt_asw_3v3_5/bus
-+ mosbius_col6_3/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_2/bus VAPWR mosbius_col6_3/tt_asw_3v3_5/mod
-+ mosbius_col6_3/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col6_3/tt_asw_3v3_0/bus
++ mosbius_col6_3/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_2/bus mosbius_col6_3/tt_asw_3v3_5/mod
++ VAPWR mosbius_col6_3/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col6_3/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y ui_in[2] mosbius_col6_3/tt_asw_3v3_3/mod mosbius_col6_3/sky130_fd_sc_hd__and2_1_1/A
 + mosbius_col6_3/tt_asw_3v3_4/bus mosbius_col6_3/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_1/bus
 + ui_in[1] VDPWR mosbius_col6_2/sky130_fd_sc_hd__and2_1_1/A VGND mosbius_col6
@@ -1088,14 +1088,14 @@ Xsky130_fd_pr__nfet_g5v0d10v5_8263FJ_1 mosbius_col7_9/tt_asw_3v3_7/mod mosbius_c
 + mosbius_col8_4/tt_asw_3v3_5/mod sky130_fd_pr__nfet_g5v0d10v5_8263FJ
 Xmosbius_col7_10 mosbius_col7_10/X mosbius_col7_10/tt_asw_3v3_7/mod mosbius_col8_30/tt_asw_3v3_5/bus
 + mosbius_col7_10/tt_asw_3v3_7/mod mosbius_col6_3/tt_asw_3v3_5/bus mosbius_col7_10/tt_asw_3v3_7/mod
-+ mosbius_col7_10/tt_asw_3v3_7/mod VAPWR mosbius_col6_3/tt_asw_3v3_0/bus mosbius_col8_30/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_10/tt_asw_3v3_7/mod mosbius_col6_3/tt_asw_3v3_0/bus mosbius_col8_30/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y VGND mosbius_col7_10/tt_asw_3v3_7/mod mosbius_col7_9/sky130_fd_sc_hd__and2_1_6/A
 + mosbius_col8_30/tt_asw_3v3_6/bus mosbius_col7_10/tt_asw_3v3_7/mod mosbius_col7_10/sky130_fd_sc_hd__and2_1_6/A
 + ui_in[1] mosbius_col7_10/tt_asw_3v3_7/ctrl mosbius_col6_3/tt_asw_3v3_4/bus ui_in[2]
 + mosbius_col7_10/tt_asw_3v3_7/mod VGND VDPWR mosbius_col7
 Xmosbius_col7_11 mosbius_col7_11/X mosbius_col7_11/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_5/bus
 + mosbius_col7_11/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_2/bus mosbius_col7_11/tt_asw_3v3_5/mod
-+ mosbius_col7_11/tt_asw_3v3_5/mod VAPWR mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_11/tt_asw_3v3_5/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col8_4/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y mosbius_col7_13/tt_asw_3v3_7/bus mosbius_col7_11/tt_asw_3v3_5/mod
 + mosbius_col8_19/sky130_fd_sc_hd__and2_1_4/A mosbius_col8_4/tt_asw_3v3_6/bus mosbius_col7_11/tt_asw_3v3_5/mod
 + mosbius_col7_11/sky130_fd_sc_hd__and2_1_6/A ui_in[1] mosbius_col7_11/tt_asw_3v3_7/ctrl
@@ -1140,7 +1140,7 @@ Xsky130_fd_pr__pfet_g5v0d10v5_AA5R3U_2 mosbius_col8_27/tt_asw_3v3_6/mod mosbius_
 + sky130_fd_pr__pfet_g5v0d10v5_AA5R3U
 Xmosbius_col7_12 mosbius_col7_12/X mosbius_col7_12/tt_asw_3v3_5/mod mosbius_col8_30/tt_asw_3v3_5/bus
 + mosbius_col7_12/tt_asw_3v3_5/mod mosbius_col6_3/tt_asw_3v3_5/bus mosbius_col7_12/tt_asw_3v3_5/mod
-+ mosbius_col7_12/tt_asw_3v3_5/mod VAPWR mosbius_col6_3/tt_asw_3v3_0/bus mosbius_col8_30/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_12/tt_asw_3v3_5/mod mosbius_col6_3/tt_asw_3v3_0/bus mosbius_col8_30/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y VGND mosbius_col7_12/tt_asw_3v3_5/mod mosbius_col7_13/sky130_fd_sc_hd__and2_1_6/A
 + mosbius_col8_30/tt_asw_3v3_6/bus mosbius_col7_12/tt_asw_3v3_5/mod mosbius_col7_12/sky130_fd_sc_hd__and2_1_6/A
 + ui_in[1] mosbius_col7_12/tt_asw_3v3_7/ctrl mosbius_col6_3/tt_asw_3v3_4/bus ui_in[2]
@@ -1157,7 +1157,7 @@ Xsky130_fd_pr__nfet_g5v0d10v5_8263FJ_3 mosbius_col7_10/tt_asw_3v3_7/mod mosbius_
 + mosbius_col8_11/tt_asw_3v3_5/mod sky130_fd_pr__nfet_g5v0d10v5_8263FJ
 Xmosbius_col7_13 mosbius_col7_13/X mosbius_col7_13/tt_asw_3v3_5/mod mosbius_col6_3/tt_asw_3v3_5/bus
 + mosbius_col7_13/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_2/bus mosbius_col7_13/tt_asw_3v3_5/mod
-+ mosbius_col7_13/tt_asw_3v3_3/mod VAPWR mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col6_3/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_13/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col6_3/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y mosbius_col7_13/tt_asw_3v3_7/bus mosbius_col7_13/tt_asw_3v3_3/mod
 + mosbius_col7_11/sky130_fd_sc_hd__and2_1_6/A mosbius_col6_3/tt_asw_3v3_4/bus mosbius_col7_13/tt_asw_3v3_5/mod
 + mosbius_col7_13/sky130_fd_sc_hd__and2_1_6/A ui_in[1] mosbius_col7_13/tt_asw_3v3_7/ctrl
@@ -1165,7 +1165,7 @@ Xmosbius_col7_13 mosbius_col7_13/X mosbius_col7_13/tt_asw_3v3_5/mod mosbius_col6
 + mosbius_col7
 Xmosbius_col7_14 mosbius_col7_14/X mosbius_col7_14/tt_asw_3v3_5/mod mosbius_col6_3/tt_asw_3v3_5/bus
 + mosbius_col7_14/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_2/bus mosbius_col7_14/tt_asw_3v3_5/mod
-+ mosbius_col7_14/tt_asw_3v3_3/mod VAPWR mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col6_3/tt_asw_3v3_0/bus
++ VAPWR mosbius_col7_14/tt_asw_3v3_3/mod mosbius_col8_4/tt_asw_3v3_3/bus mosbius_col6_3/tt_asw_3v3_0/bus
 + sky130_fd_sc_hd__clkinv_16_0/Y tt_asw_3v3_0/bus mosbius_col7_14/tt_asw_3v3_3/mod
 + mosbius_col7_12/sky130_fd_sc_hd__and2_1_6/A mosbius_col6_3/tt_asw_3v3_4/bus mosbius_col7_14/tt_asw_3v3_5/mod
 + mosbius_col7_14/sky130_fd_sc_hd__and2_1_6/A ui_in[1] mosbius_col7_14/tt_asw_3v3_7/ctrl
